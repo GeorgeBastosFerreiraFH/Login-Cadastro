@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<main>
+
+    <body>
+        <div class="container">
+            <div class="form-container" id="login-container">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input type="email" id="login-email" placeholder="E-mail" required>
+                    <input type="password" id="login-password" placeholder="Senha" required>
+                    <button type="submit" id="btn-login">Entrar</button>
+                    <p>Não tem uma conta? <a href="#" id="show-register">Cadastre-se</a></p>
+                </form>
+            </div>
+            <div class="form-container hidden" id="register-container">
+                <h2>Cadastro</h2>
+                <form id="register-form">
+                    <input type="text" id="register-name" placeholder="Nome" required>
+                    <input type="email" id="register-email" placeholder="E-mail" required>
+                    <input type="password" id="register-password" placeholder="Senha" required>
+                    <input type="password" id="confirm-password" placeholder="Confirme sua Senha" required>
+                    <button type="submit" id="btn-cadastrar">Cadastrar</button>
+                    <p>Já tem uma conta? <a href="#" id="show-login">Faça login</a></p>
+                </form>
+            </div>
+        </div>
+</main>
+<script src="script.js"></script>
+</body>
+
+</html>
