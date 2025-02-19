@@ -95,6 +95,8 @@ document
 
     if (emailValido) {
       alert("Login realizado com sucesso!");
+      document.getElementById("login-email").value = "";
+      document.getElementById("login-password").value = "";
     } else {
       alert("E-mail não cadastrado!");
     }
